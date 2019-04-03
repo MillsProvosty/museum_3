@@ -1,13 +1,13 @@
 require './lib/exhibit_module'
 
-class Exhibit
+class Museum
   include ExhibitMod
 
   attr_reader :name,
-              :cost
-  def initialize(name, cost)
+              :exhibits
+
+  def initialize(name)
     @name = name
-    @cost = cost
     @exhibits = []
   end
 
